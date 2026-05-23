@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Dashboard - roopesh4p5</title>
+    <title>Roopesh Vishwakarma | Full Stack Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .holo-border {
             border: 1px solid rgba(59, 130, 246, 0.2);
             box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
+        }
+        .skill-tag {
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            font-size: 0.7rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            font-family: monospace;
         }
     </style>
 </head>
@@ -16,18 +25,18 @@
     <div class="max-w-6xl mx-auto space-y-8 relative z-10">
         
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Left: Profile & Info -->
-            <div class="lg:col-span-1 space-y-8">
-                <section id="profile-section" class="bg-slate-800 holo-border rounded-3xl p-8 shadow-2xl space-y-6 text-center">
+            <!-- Left Column: Profile & Contact -->
+            <div class="lg:col-span-1 space-y-6">
+                <section class="bg-slate-800 holo-border rounded-3xl p-8 shadow-2xl text-center space-y-6">
                     <div id="avatar-container" class="w-24 h-24 mx-auto rounded-full bg-slate-700 border-2 border-blue-500/30 overflow-hidden">
                         <!-- Avatar -->
                     </div>
-                    <div class="space-y-2">
-                        <h1 id="user-name" class="text-2xl font-bold tracking-tight">Loading...</h1>
-                        <p id="user-bio" class="text-slate-400 text-sm">Fetching profile...</p>
+                    <div class="space-y-1">
+                        <h1 class="text-2xl font-bold tracking-tight text-white">Roopesh Vishwakarma</h1>
+                        <p class="text-blue-400 text-sm font-semibold">MEAN & MERN Stack Developer</p>
                     </div>
                     
-                    <div class="grid grid-cols-2 gap-2 pt-2">
+                    <div class="grid grid-cols-2 gap-2">
                         <div class="p-3 bg-slate-900/50 rounded-xl border border-slate-700">
                             <div id="repo-count" class="text-xl font-bold text-blue-400">--</div>
                             <div class="text-[10px] uppercase text-slate-500">Repositories</div>
@@ -38,32 +47,92 @@
                         </div>
                     </div>
 
-                    <!-- Moved Clock Here -->
                     <div class="p-4 bg-slate-900/80 rounded-2xl border border-blue-500/20">
-                        <div id="digital-clock" class="text-3xl font-mono font-bold text-blue-400 tabular-nums">
-                            00:00:00
+                        <div id="digital-clock" class="text-3xl font-mono font-bold text-blue-400 tabular-nums">00:00:00</div>
+                        <div class="text-[10px] uppercase tracking-widest text-slate-500 mt-1">System Time</div>
+                    </div>
+
+                    <div class="pt-4 space-y-3 text-left">
+                        <div class="flex items-center gap-3 text-xs text-slate-400">
+                            <span class="text-blue-500">📍</span> Bangalore, India
                         </div>
-                        <div class="text-[10px] uppercase tracking-widest text-slate-500 mt-1">Local System Time</div>
+                        <div class="flex items-center gap-3 text-xs text-slate-400">
+                            <span class="text-blue-500">📧</span> roopesh4p5@gmail.com
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Technical Skills -->
+                <section class="bg-slate-800/50 holo-border rounded-3xl p-6 space-y-4">
+                    <h2 class="text-sm font-bold uppercase tracking-widest text-slate-500 px-2">Tech Stack</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Tailwind</span>
                     </div>
                 </section>
             </div>
 
-            <!-- Right: Repos Grid -->
-            <div class="lg:col-span-2 space-y-6">
-                <h2 class="text-xl font-bold px-2 flex items-center gap-2">
-                    <span class="w-1.5 h-6 bg-blue-500 rounded-full"></span>
-                    Repositories
-                </h2>
-                <div id="repos-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <!-- Skeleton Cards -->
-                    <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 h-32 animate-pulse"></div>
-                    <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 h-32 animate-pulse"></div>
-                </div>
+            <!-- Right Column: About & Experience -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- About Me -->
+                <section class="space-y-4">
+                    <h2 class="text-xl font-bold px-2 flex items-center gap-2 text-white">
+                        <span class="w-1.5 h-6 bg-blue-500 rounded-full"></span>
+                        About Me
+                    </h2>
+                    <div class="bg-slate-800/80 backdrop-blur holo-border rounded-3xl p-8">
+                        <p class="text-slate-300 leading-relaxed">
+                            Full Stack Developer with 2.6+ years of experience specializing in building scalable web applications and real-time dashboards. 
+                            Expertise in <strong>MERN & MEAN stacks</strong>, with a strong focus on microservices, REST APIs, and cloud-native solutions. 
+                            Currently engineering high-performance systems at <strong>Pace Wisdom Solutions</strong>.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Experience Highlights -->
+                <section class="space-y-4">
+                    <h2 class="text-xl font-bold px-2 flex items-center gap-2 text-white">
+                        <span class="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
+                        Key Experience
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="font-bold text-blue-400 text-sm mb-1">Pace Wisdom Solutions</h3>
+                            <p class="text-[10px] text-slate-500 mb-2 uppercase">Software Engineer L1</p>
+                            <p class="text-xs text-slate-400">Building enterprise ERP systems and real-time cloud monitoring platforms.</p>
+                        </div>
+                        <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
+                            <h3 class="font-bold text-emerald-400 text-sm mb-1">Project: ITDR Platform</h3>
+                            <p class="text-[10px] text-slate-500 mb-2 uppercase">Full Stack Integration</p>
+                            <p class="text-xs text-slate-400">Integrated GitHub REST APIs with BullMQ for automated data collection.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Repositories -->
+                <section class="space-y-4">
+                    <h2 class="text-xl font-bold px-2 flex items-center gap-2 text-white">
+                        <span class="w-1.5 h-6 bg-blue-500 rounded-full"></span>
+                        GitHub Pulse
+                    </h2>
+                    <div id="repos-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Skeleton -->
+                        <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 h-32 animate-pulse"></div>
+                        <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-6 h-32 animate-pulse"></div>
+                    </div>
+                </section>
             </div>
         </div>
 
         <footer class="text-center pt-8 text-slate-600 text-[10px] uppercase tracking-[0.2em]">
-            AI Integrated Environment • <span id="sync-time">Syncing...</span>
+            Engineered by AI • Last Sync: <span id="sync-time">...</span>
         </footer>
     </div>
 
@@ -81,42 +150,36 @@
             try {
                 const userResponse = await fetch(`https://api.github.com/users/${USERNAME}`);
                 const userData = await userResponse.json();
-                
                 document.getElementById('avatar-container').innerHTML = `<img src="${userData.avatar_url}" alt="Avatar" class="w-full h-full object-cover">`;
-                document.getElementById('user-name').innerText = userData.name || userData.login;
-                document.getElementById('user-bio').innerText = userData.bio || 'Developer';
                 document.getElementById('repo-count').innerText = userData.public_repos;
                 document.getElementById('follower-count').innerText = userData.followers;
 
-                const reposResponse = await fetch(`https://api.github.com/users/${USERNAME}/repos?sort=updated&per_page=6`);
+                const reposResponse = await fetch(`https://api.github.com/users/${USERNAME}/repos?sort=updated&per_page=4`);
                 const reposData = await reposResponse.json();
-                
                 const reposGrid = document.getElementById('repos-grid');
                 reposGrid.innerHTML = '';
 
                 reposData.forEach(repo => {
                     const card = document.createElement('div');
-                    card.className = 'bg-slate-800/80 backdrop-blur holo-border rounded-2xl p-6 hover:bg-slate-700/50 transition-all group';
+                    card.className = 'bg-slate-800/80 backdrop-blur border border-slate-700 rounded-2xl p-6 hover:bg-slate-700/50 transition-all';
                     card.innerHTML = `
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold group-hover:text-blue-400 transition-colors truncate pr-4">${repo.name}</h3>
+                            <h3 class="font-bold text-sm text-slate-200 truncate pr-4">${repo.name}</h3>
                         </div>
-                        <p class="text-slate-400 text-xs mb-6 line-clamp-2 h-8">${repo.description || 'No description'}</p>
+                        <p class="text-slate-400 text-[10px] mb-6 line-clamp-2 h-6">${repo.description || 'System module...'}</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-[10px] text-slate-500 font-mono">${repo.language || 'Code'}</span>
+                            <span class="text-[9px] text-slate-500 font-mono">${repo.language || 'DATA'}</span>
                             <div class="flex gap-3">
-                                <a href="${repo.html_url}" target="_blank" class="text-[10px] font-bold text-blue-400 uppercase">Source</a>
-                                ${repo.has_pages ? `<a href="https://${USERNAME}.github.io/${repo.name}/" target="_blank" class="text-[10px] font-bold text-emerald-400 uppercase">Live</a>` : ''}
+                                <a href="${repo.html_url}" target="_blank" class="text-[9px] font-bold text-blue-400 uppercase tracking-tighter">Repo</a>
+                                ${repo.has_pages ? `<a href="https://${USERNAME}.github.io/${repo.name}/" target="_blank" class="text-[9px] font-bold text-emerald-400 uppercase tracking-tighter">Live</a>` : ''}
                             </div>
                         </div>
                     `;
                     reposGrid.appendChild(card);
                 });
-
                 document.getElementById('sync-time').innerText = new Date().toLocaleTimeString();
             } catch (error) { console.error(error); }
         }
-
         fetchGitHubData();
     </script>
 </body>
