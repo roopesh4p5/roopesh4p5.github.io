@@ -19,13 +19,20 @@
             border-radius: 9999px;
             font-family: monospace;
         }
+        .animate-glow {
+            animation: glow 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+            to { text-shadow: 0 0 15px rgba(59, 130, 246, 0.8); }
+        }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-100 min-h-screen p-4 md:p-8 font-sans overflow-x-hidden">
     <div class="max-w-6xl mx-auto space-y-8 relative z-10">
         
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Left Column: Profile & Contact -->
+            <!-- Left Column: Profile & Info -->
             <div class="lg:col-span-1 space-y-6">
                 <section class="bg-slate-800 holo-border rounded-3xl p-8 shadow-2xl text-center space-y-6">
                     <div id="avatar-container" class="w-24 h-24 mx-auto rounded-full bg-slate-700 border-2 border-blue-500/30 overflow-hidden">
@@ -47,6 +54,14 @@
                         </div>
                     </div>
 
+                    <!-- Dynamic Experience Clock -->
+                    <div class="p-4 bg-slate-900/80 rounded-2xl border border-emerald-500/20">
+                        <div id="experience-clock" class="text-sm font-mono font-bold text-emerald-400 tabular-nums leading-tight">
+                            Loading Experience...
+                        </div>
+                        <div class="text-[9px] uppercase tracking-widest text-slate-500 mt-1 italic text-emerald-500/70">Professional Runtime (FTE)</div>
+                    </div>
+
                     <div class="p-4 bg-slate-900/80 rounded-2xl border border-blue-500/20">
                         <div id="digital-clock" class="text-3xl font-mono font-bold text-blue-400 tabular-nums">00:00:00</div>
                         <div class="text-[10px] uppercase tracking-widest text-slate-500 mt-1">System Time</div>
@@ -66,6 +81,7 @@
                 <section class="bg-slate-800/50 holo-border rounded-3xl p-6 space-y-4">
                     <h2 class="text-sm font-bold uppercase tracking-widest text-slate-500 px-2">Tech Stack</h2>
                     <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag border-emerald-500/30 text-emerald-400">Python</span>
                         <span class="skill-tag">Angular</span>
                         <span class="skill-tag">React</span>
                         <span class="skill-tag">Node.js</span>
@@ -88,11 +104,31 @@
                         About Me
                     </h2>
                     <div class="bg-slate-800/80 backdrop-blur holo-border rounded-3xl p-8">
-                        <p class="text-slate-300 leading-relaxed">
-                            Full Stack Developer with 2.6+ years of experience specializing in building scalable web applications and real-time dashboards. 
-                            Expertise in <strong>MERN & MEAN stacks</strong>, with a strong focus on microservices, REST APIs, and cloud-native solutions. 
-                            Currently engineering high-performance systems at <strong>Pace Wisdom Solutions</strong>.
+                        <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                            Full Stack Developer with 2.6+ years of total experience. Specialized in building scalable web applications and real-time dashboards using <strong>MERN & MEAN stacks</strong>. 
+                            Proficient in **Python** for backend automation and data processing. 
+                            Currently engineering high-performance systems at <strong>Pace Wisdom Solutions</strong> as a Full-Time Software Engineer.
                         </p>
+                    </div>
+                </section>
+
+                <!-- Deployed Apps Section -->
+                <section class="space-y-4">
+                    <h2 class="text-xl font-bold px-2 flex items-center gap-2 text-white">
+                        <span class="w-1.5 h-6 bg-purple-500 rounded-full"></span>
+                        Deployed Applications
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <a href="https://ubuntu-rho.vercel.app" target="_blank" class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition-all group">
+                            <h3 class="font-bold text-purple-400 text-sm mb-1 group-hover:animate-pulse">Ubuntu Rho</h3>
+                            <p class="text-[10px] text-slate-500 mb-2 uppercase tracking-tighter">Vercel Deployment • OS Interface Simulation</p>
+                            <p class="text-xs text-slate-400 leading-tight">An advanced web-based environment simulation hosted on Vercel.</p>
+                        </a>
+                        <a href="https://sudoku-lac.vercel.app" target="_blank" class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition-all group">
+                            <h3 class="font-bold text-purple-400 text-sm mb-1 group-hover:animate-pulse">Sudoku Lac</h3>
+                            <p class="text-[10px] text-slate-500 mb-2 uppercase tracking-tighter">Vercel Deployment • Logic Engine</p>
+                            <p class="text-xs text-slate-400 leading-tight">A high-performance Sudoku solver and game engine built with modern frameworks.</p>
+                        </a>
                     </div>
                 </section>
 
@@ -105,8 +141,8 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
                             <h3 class="font-bold text-blue-400 text-sm mb-1">Pace Wisdom Solutions</h3>
-                            <p class="text-[10px] text-slate-500 mb-2 uppercase">Software Engineer L1</p>
-                            <p class="text-xs text-slate-400">Building enterprise ERP systems and real-time cloud monitoring platforms.</p>
+                            <p class="text-[10px] text-slate-500 mb-2 uppercase">Full-Time Software Engineer</p>
+                            <p class="text-xs text-slate-400">Onboarded Oct 3, 2023. Leading enterprise ERP systems and real-time cloud monitoring platforms.</p>
                         </div>
                         <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
                             <h3 class="font-bold text-emerald-400 text-sm mb-1">Project: ITDR Platform</h3>
@@ -116,7 +152,7 @@
                     </div>
                 </section>
 
-                <!-- Repositories -->
+                <!-- GitHub Pulse -->
                 <section class="space-y-4">
                     <h2 class="text-xl font-bold px-2 flex items-center gap-2 text-white">
                         <span class="w-1.5 h-6 bg-blue-500 rounded-full"></span>
@@ -138,12 +174,41 @@
 
     <script>
         const USERNAME = 'roopesh4p5';
+        const ONBOARD_DATE = new Date('2023-10-03T00:00:00');
+
+        function updateExperience() {
+            const now = new Date();
+            let years = now.getFullYear() - ONBOARD_DATE.getFullYear();
+            let months = now.getMonth() - ONBOARD_DATE.getMonth();
+            let days = now.getDate() - ONBOARD_DATE.getDate();
+            let hours = now.getHours() - ONBOARD_DATE.getHours();
+            let minutes = now.getMinutes() - ONBOARD_DATE.getMinutes();
+            let seconds = now.getSeconds() - ONBOARD_DATE.getSeconds();
+
+            if (seconds < 0) { seconds += 60; minutes--; }
+            if (minutes < 0) { minutes += 60; hours--; }
+            if (hours < 0) { hours += 24; days--; }
+            if (days < 0) {
+                const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+                days += prevMonth.getDate();
+                months--;
+            }
+            if (months < 0) { months += 12; years--; }
+
+            const expStr = `${years}Y ${months}M ${days}D ${hours}h ${minutes}m ${seconds}s`;
+            document.getElementById('experience-clock').innerText = expStr;
+        }
 
         function updateClock() {
             const now = new Date();
             document.getElementById('digital-clock').innerText = now.toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
         }
-        setInterval(updateClock, 1000);
+
+        setInterval(() => {
+            updateExperience();
+            updateClock();
+        }, 1000);
+        updateExperience();
         updateClock();
 
         async function fetchGitHubData() {
