@@ -25,7 +25,7 @@
     <div class="max-w-6xl mx-auto space-y-8 relative z-10">
         
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <!-- Left Column -->
+            <!-- Left Column: Profile & Info -->
             <div class="lg:col-span-1 space-y-6">
                 <section class="bg-slate-800 holo-border rounded-3xl p-8 shadow-2xl text-center space-y-6">
                     <div id="avatar-container" class="w-24 h-24 mx-auto rounded-full bg-slate-700 border-2 border-blue-500/30 overflow-hidden">
@@ -47,38 +47,41 @@
                         </div>
                     </div>
 
-                    <!-- Dynamic Experience Clock (Pace Wisdom) -->
+                    <!-- Dynamic FTE Counter (Since Oct 2023) -->
                     <div class="p-4 bg-slate-900/80 rounded-2xl border border-emerald-500/20">
                         <div id="experience-clock" class="text-sm font-mono font-bold text-emerald-400 tabular-nums leading-tight">
                             Loading Experience...
                         </div>
-                        <div class="text-[9px] uppercase tracking-widest text-slate-500 mt-1 italic text-emerald-500/70">Professional Runtime (FTE)</div>
+                        <div class="text-[9px] uppercase tracking-widest text-slate-500 mt-1 italic text-emerald-500/70">Full-Time Runtime</div>
                     </div>
 
-                    <div class="pt-4 space-y-3 text-left border-t border-slate-700/50">
-                        <div class="flex items-center gap-3 text-xs text-slate-400">
+                    <div class="pt-4 space-y-3 text-left border-t border-slate-700/50 text-[11px]">
+                        <div class="flex items-center gap-3 text-slate-400">
                             <span class="text-blue-500">📍</span> Bangalore, India
                         </div>
-                        <div class="flex items-center gap-3 text-xs text-slate-400">
+                        <div class="flex items-center gap-3 text-slate-400">
                             <span class="text-blue-500">📧</span> roopesh4p5@gmail.com
+                        </div>
+                        <div class="flex items-center gap-3 text-slate-400">
+                            <span class="text-blue-500">💼</span> Pace Wisdom Solutions
                         </div>
                     </div>
                 </section>
 
                 <!-- Technical Skills -->
                 <section class="bg-slate-800/50 holo-border rounded-3xl p-6 space-y-4">
-                    <h2 class="text-sm font-bold uppercase tracking-widest text-slate-500 px-2 text-center md:text-left">Tech Stack</h2>
-                    <div class="flex flex-wrap gap-2 justify-center md:justify-start">
+                    <h2 class="text-sm font-bold uppercase tracking-widest text-slate-500 px-2">Tech Stack</h2>
+                    <div class="flex flex-wrap gap-2">
                         <span class="skill-tag border-emerald-500/30 text-emerald-400">Python</span>
                         <span class="skill-tag">Angular</span>
                         <span class="skill-tag">React</span>
                         <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Express.js</span>
                         <span class="skill-tag">MongoDB</span>
                         <span class="skill-tag">PostgreSQL</span>
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Tailwind</span>
                     </div>
                 </section>
             </div>
@@ -89,53 +92,42 @@
                 <section class="space-y-4">
                     <h2 class="text-xl font-bold px-2 flex items-center gap-2 text-white">
                         <span class="w-1.5 h-6 bg-blue-500 rounded-full"></span>
-                        About Me
+                        Professional Summary
                     </h2>
                     <div class="bg-slate-800/80 backdrop-blur holo-border rounded-3xl p-8">
                         <p class="text-slate-300 leading-relaxed text-sm md:text-base">
-                            Full Stack Developer with <strong id="dynamic-total-exp">--</strong>+ years of total experience. Specialized in building scalable web applications and real-time dashboards using <strong>MERN & MEAN stacks</strong>. 
-                            Proficient in **Python** for backend automation and data processing. 
-                            Currently engineering high-performance systems at <strong>Pace Wisdom Solutions</strong> as a Full-Time Software Engineer.
+                            Full Stack Developer at <strong>Pace Wisdom Solutions</strong> with 
+                            <strong id="dynamic-total-exp">--</strong>+ years of continuous experience (Internship to Software Engineer L1). 
+                            Skilled in building scalable web applications, real-time dashboards, and multi-tenant systems using the <strong>MERN & MEAN stacks</strong>. 
+                            Specialized in REST APIs, microservices, and CI/CD workflows.
                         </p>
                     </div>
                 </section>
 
-                <!-- Deployed Apps Section -->
+                <!-- Core Projects -->
                 <section class="space-y-4">
                     <h2 class="text-xl font-bold px-2 flex items-center gap-2 text-white">
                         <span class="w-1.5 h-6 bg-purple-500 rounded-full"></span>
-                        Deployed Applications
+                        Key Projects @ Pace Wisdom
                     </h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <a href="https://ubuntu-rho.vercel.app" target="_blank" class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition-all group">
-                            <h3 class="font-bold text-purple-400 text-sm mb-1 group-hover:animate-pulse">Ubuntu Rho</h3>
-                            <p class="text-[10px] text-slate-500 mb-2 uppercase tracking-tighter">Vercel Deployment • OS Interface Simulation</p>
-                            <p class="text-xs text-slate-400 leading-tight">An advanced web-based environment simulation hosted on Vercel.</p>
-                        </a>
-                        <a href="https://sudoku-lac.vercel.app" target="_blank" class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 hover:border-purple-500/50 transition-all group">
-                            <h3 class="font-bold text-purple-400 text-sm mb-1 group-hover:animate-pulse">Sudoku Lac</h3>
-                            <p class="text-[10px] text-slate-500 mb-2 uppercase tracking-tighter">Vercel Deployment • Logic Engine</p>
-                            <p class="text-xs text-slate-400 leading-tight">A high-performance Sudoku solver and game engine built with modern frameworks.</p>
-                        </a>
-                    </div>
-                </section>
-
-                <!-- Experience Highlights -->
-                <section class="space-y-4">
-                    <h2 class="text-xl font-bold px-2 flex items-center gap-2 text-white">
-                        <span class="w-1.5 h-6 bg-emerald-500 rounded-full"></span>
-                        Key Experience
-                    </h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
-                            <h3 class="font-bold text-blue-400 text-sm mb-1">Pace Wisdom Solutions</h3>
-                            <p class="text-[10px] text-slate-500 mb-2 uppercase">Full-Time Software Engineer</p>
-                            <p class="text-xs text-slate-400">Onboarded Oct 3, 2023. Leading enterprise ERP systems and real-time cloud monitoring platforms.</p>
+                        <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2">
+                            <h3 class="font-bold text-purple-400 text-sm">Yamaha DM3 Cloud Monitoring</h3>
+                            <p class="text-[10px] text-slate-500 uppercase">Real-time Dashboard • RBAC</p>
+                            <p class="text-xs text-slate-400">Developed a cloud-based real-time monitoring system with multi-tier RBAC and dynamic data visualization using Chart.js.</p>
                         </div>
-                        <div class="bg-slate-800/50 p-6 rounded-2xl border border-slate-700">
-                            <h3 class="font-bold text-emerald-400 text-sm mb-1">Project: ITDR Platform</h3>
-                            <p class="text-[10px] text-slate-500 mb-2 uppercase">Full Stack Integration</p>
-                            <p class="text-xs text-slate-400">Integrated GitHub REST APIs with BullMQ for automated data collection.</p>
+                        <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2">
+                            <h3 class="font-bold text-purple-400 text-sm">Nucleus ERP</h3>
+                            <p class="text-[10px] text-slate-500 uppercase">Multi-tenant • Hierarchical Systems</p>
+                            <p class="text-xs text-slate-400">Built a robust multi-tenant platform featuring complex pricing models and hierarchical organizational systems.</p>
+                        </div>
+                        <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2">
+                            <h3 class="font-bold text-purple-400 text-sm">Unosecur (ITDR Platform)</h3>
+                            <p class="text-[10px] text-slate-500 uppercase">GitHub API • BullMQ</p>
+                            <p class="text-xs text-slate-400">Engineered a data collection engine using GitHub REST APIs and BullMQ for high-concurrency automated processing.</p>
+                        </div>
+                        <div class="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-2 text-center flex flex-col justify-center border-dashed">
+                            <p class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">More Projects In Pipeline</p>
                         </div>
                     </div>
                 </section>
@@ -155,26 +147,25 @@
         </div>
 
         <footer class="text-center pt-8 text-slate-600 text-[10px] uppercase tracking-[0.2em]">
-            Engineered by AI • Last Sync: <span id="sync-time">...</span>
+            Syncing Professional Data • Last Updated: <span id="sync-time">...</span>
         </footer>
     </div>
 
     <script>
         const USERNAME = 'roopesh4p5';
-        const ONBOARD_DATE = new Date('2023-10-03T00:00:00');
-        // Based on "2.6+ years" claim as of Nov 2024, total experience started roughly Nov 2021
-        const TOTAL_START_DATE = new Date('2021-11-01T00:00:00');
+        const CAREER_START = new Date('2023-04-03T00:00:00'); // Internship start
+        const FTE_START = new Date('2023-10-03T00:00:00');    // Full-time start
 
         function updateExperience() {
             const now = new Date();
             
-            // Precise FTE Counter
-            let years = now.getFullYear() - ONBOARD_DATE.getFullYear();
-            let months = now.getMonth() - ONBOARD_DATE.getMonth();
-            let days = now.getDate() - ONBOARD_DATE.getDate();
-            let hours = now.getHours() - ONBOARD_DATE.getHours();
-            let minutes = now.getMinutes() - ONBOARD_DATE.getMinutes();
-            let seconds = now.getSeconds() - ONBOARD_DATE.getSeconds();
+            // 1. Precise FTE Counter
+            let years = now.getFullYear() - FTE_START.getFullYear();
+            let months = now.getMonth() - FTE_START.getMonth();
+            let days = now.getDate() - FTE_START.getDate();
+            let hours = now.getHours() - FTE_START.getHours();
+            let minutes = now.getMinutes() - FTE_START.getMinutes();
+            let seconds = now.getSeconds() - FTE_START.getSeconds();
 
             if (seconds < 0) { seconds += 60; minutes--; }
             if (minutes < 0) { minutes += 60; hours--; }
@@ -188,8 +179,8 @@
 
             document.getElementById('experience-clock').innerText = `${years}Y ${months}M ${days}D ${hours}h ${minutes}m ${seconds}s`;
 
-            // Dynamic Total Experience in Bio (One decimal place)
-            const totalDiff = now - TOTAL_START_DATE;
+            // 2. Dynamic Total Experience in Bio (Internship + FTE)
+            const totalDiff = now - CAREER_START;
             const totalYears = (totalDiff / (1000 * 60 * 60 * 24 * 365.25)).toFixed(1);
             document.getElementById('dynamic-total-exp').innerText = totalYears;
         }
@@ -217,12 +208,12 @@
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="font-bold text-sm text-slate-200 truncate pr-4">${repo.name}</h3>
                         </div>
-                        <p class="text-slate-400 text-[10px] mb-6 line-clamp-2 h-6">${repo.description || 'System module...'}</p>
+                        <p class="text-slate-400 text-[10px] mb-6 line-clamp-2 h-6 font-mono font-bold italic opacity-70"> ${repo.description || 'System module...'}</p>
                         <div class="flex items-center justify-between">
-                            <span class="text-[9px] text-slate-500 font-mono">${repo.language || 'DATA'}</span>
+                            <span class="text-[9px] text-slate-500 font-mono font-bold uppercase">${repo.language || 'DATA'}</span>
                             <div class="flex gap-3">
-                                <a href="${repo.html_url}" target="_blank" class="text-[9px] font-bold text-blue-400 uppercase tracking-tighter">Repo</a>
-                                ${repo.has_pages ? `<a href="https://${USERNAME}.github.io/${repo.name}/" target="_blank" class="text-[9px] font-bold text-emerald-400 uppercase tracking-tighter">Live</a>` : ''}
+                                <a href="${repo.html_url}" target="_blank" class="text-[9px] font-bold text-blue-400 uppercase tracking-tighter hover:text-blue-300">Code</a>
+                                ${repo.has_pages ? `<a href="https://${USERNAME}.github.io/${repo.name}/" target="_blank" class="text-[9px] font-bold text-emerald-400 uppercase tracking-tighter hover:text-emerald-300">Live</a>` : ''}
                             </div>
                         </div>
                     `;
